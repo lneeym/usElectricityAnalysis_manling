@@ -187,6 +187,108 @@ const App: React.FC = () => {
         </div>
       </section>
 
+      {/* ==================== RESEARCH QUESTIONS ==================== */}
+<section className="fade-section py-20 px-8 bg-[#F3F4F6] relative z-10">
+  <div className="max-w-4xl mx-auto">
+    <div className="text-center mb-12">
+      <span className="inline-block px-4 py-1 bg-[#FCFA6E] text-[#282828] text-sm font-medium rounded-full mb-6">
+        Research Framework
+      </span>
+      <h2 className="text-3xl font-bold text-[#282828] mb-4">Five Questions That Guided This Study</h2>
+      <p className="text-[#5B5B5B] max-w-2xl mx-auto">
+        Before diving into the data, I designed five research questions to guide my exploration.
+      </p>
+    </div>
+
+    <div className="space-y-4">
+      {/* Question 1 */}
+      <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+        <div className="flex items-start gap-4">
+          <div className="w-10 h-10 rounded-full bg-[#FCFA6E] flex items-center justify-center flex-shrink-0">
+            <span className="text-[#282828] font-bold">1</span>
+          </div>
+          <div>
+            <h3 className="font-semibold text-[#282828] mb-2">How much electricity does the average American consume?</h3>
+            <p className="text-[#5B5B5B] text-sm">
+              Tracking per capita consumption patterns and how they've changed over time from 2019 to 2024.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Question 2 */}
+      <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+        <div className="flex items-start gap-4">
+          <div className="w-10 h-10 rounded-full bg-[#FCFA6E] flex items-center justify-center flex-shrink-0">
+            <span className="text-[#282828] font-bold">2</span>
+          </div>
+          <div>
+            <h3 className="font-semibold text-[#282828] mb-2">What is the realistic baseline electricity need?</h3>
+            <p className="text-[#5B5B5B] text-sm">
+              Comparing what households actually need for typical activities versus what they actually consume.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Question 3 */}
+      <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+        <div className="flex items-start gap-4">
+          <div className="w-10 h-10 rounded-full bg-[#FCFA6E] flex items-center justify-center flex-shrink-0">
+            <span className="text-[#282828] font-bold">3</span>
+          </div>
+          <div>
+            <h3 className="font-semibold text-[#282828] mb-2">How much electricity is lost through transmission and phantom loads?</h3>
+            <p className="text-[#5B5B5B] text-sm">
+              Investigating transmission losses, distribution inefficiencies, and standby power waste in American homes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Question 4 */}
+      <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+        <div className="flex items-start gap-4">
+          <div className="w-10 h-10 rounded-full bg-[#FCFA6E] flex items-center justify-center flex-shrink-0">
+            <span className="text-[#282828] font-bold">4</span>
+          </div>
+          <div>
+            <h3 className="font-semibold text-[#282828] mb-2">If wasted electricity were captured, what would be the impact?</h3>
+            <p className="text-[#5B5B5B] text-sm">
+              Calculating how many households could be powered and the potential CO₂ reduction from eliminating waste.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Question 5 */}
+      <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+        <div className="flex items-start gap-4">
+          <div className="w-10 h-10 rounded-full bg-[#FCFA6E] flex items-center justify-center flex-shrink-0">
+            <span className="text-[#282828] font-bold">5</span>
+          </div>
+          <div>
+            <h3 className="font-semibold text-[#282828] mb-2">How do consumption patterns vary by state and region?</h3>
+            <p className="text-[#5B5B5B] text-sm">
+              Mapping geographic differences to identify which regions have the highest consumption and waste potential.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Inspiration Note */}
+    <div className="mt-12 bg-[#282828] rounded-2xl p-6 text-center">
+      <p className="text-[#9B9B9B] text-sm mb-2">The Inspiration Behind This Project</p>
+      <p className="text-white text-lg leading-relaxed">
+        "When I came to the U.S., I noticed people often leave lights on and devices plugged in — 
+        habits quite different from what I grew up with in China. This cultural observation sparked my curiosity: 
+        <span className="text-[#FCFA6E]"> just how much electricity does America waste?</span>"
+      </p>
+    </div>
+  </div>
+</section>
+
       {/* ==================== VISUAL BREAK: TRANSMISSION ==================== */}
       <section 
         className="h-[60vh] relative flex items-center justify-center z-10"
