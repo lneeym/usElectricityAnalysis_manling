@@ -1,0 +1,5 @@
+{
+  "name": "US Residential Energy Insights",
+  "description": "A high-fidelity dashboard visualizing US Residential Electricity Consumption Per Capita (2014-2024) with AI-powered insights, featuring a specific design aesthetic inspired by CO2 emission distribution visualizations.",
+  "requestFramePermissions": []
+}

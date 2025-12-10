@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>US Residential Energy Insights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Gilroy', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+      },
+            colors: {
+              accent: {
+                red: '#D1353A',
+                orange: '#E99940',
+                yellow: '#F8F953',
+                dark: '#212020',
+                gray: '#E99940',
+              },
+              surface: {
+                light: '#F3F4F6',
+                card: '#FFFFFF',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F3F4F6;
+        color: #1F2937;
+      }
+      /* Custom Scrollbar to match clean aesthetic */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #D1D5DB;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #9CA3AF;
+      }
+    </style>
+
+
+<style>
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Heavy.ttf') format('truetype');
+    font-weight: 800;
+  }
+  
+  *, *::before, *::after {
+    font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p, span, div, a, button {
+    font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  }
+</style>
+
+
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
