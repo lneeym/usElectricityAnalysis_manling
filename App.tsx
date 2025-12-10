@@ -827,44 +827,74 @@ const App: React.FC = () => {
             </div>
           </div>
 
-          {/* Data Sources */}
-          <div className="border-t border-white/10 pt-8">
-            <p className="text-xs text-[#5B5B5B] uppercase tracking-wide mb-4">Data Sources & References</p>
-            <div className="grid md:grid-cols-2 gap-4 text-left max-w-2xl mx-auto mb-6">
-              <a href="https://www.eia.gov/electricity/data.php" target="_blank" rel="noopener noreferrer" 
-                 className="text-sm text-[#9B9B9B] hover:text-[#FCFA6E] transition-colors flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#D1353A]" />
-                U.S. Energy Information Administration (EIA)
-              </a>
-              <a href="https://www.epa.gov/egrid" target="_blank" rel="noopener noreferrer"
-                 className="text-sm text-[#9B9B9B] hover:text-[#FCFA6E] transition-colors flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#E99940]" />
-                EPA eGRID Database
-              </a>
-              <a href="https://www.nrdc.org/resources/home-idle-load" target="_blank" rel="noopener noreferrer"
-                 className="text-sm text-[#9B9B9B] hover:text-[#FCFA6E] transition-colors flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#9B9B9B]" />
-                Natural Resources Defense Council (NRDC)
-              </a>
-              <a href="https://eta.lbl.gov/publications/home-idle-load-devices-wasting" target="_blank" rel="noopener noreferrer"
-                 className="text-sm text-[#9B9B9B] hover:text-[#FCFA6E] transition-colors flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#FCFA6E]" />
-                Lawrence Berkeley National Laboratory
-              </a>
-              <a href="https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator" target="_blank" rel="noopener noreferrer"
-                 className="text-sm text-[#9B9B9B] hover:text-[#FCFA6E] transition-colors flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-green-500" />
-                EPA GHG Equivalencies Calculator
-              </a>
-              <a href="https://www.census.gov/popclock/" target="_blank" rel="noopener noreferrer"
-                 className="text-sm text-[#9B9B9B] hover:text-[#FCFA6E] transition-colors flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-400" />
-                U.S. Census Bureau Population Data
-              </a>
-            </div>
-            <p className="text-xs text-[#5B5B5B]">Data Period: 2019–2024 · Last Updated: December 2025</p>
-            <p className="text-xs text-[#5B5B5B] mt-2">NYU IMA Data Visualization · Fall 2025</p>
-          </div>
+          {/* Data Sources with Citations */}
+<div className="border-t border-white/10 pt-8">
+  <p className="text-xs text-[#5B5B5B] uppercase tracking-wide mb-4">Data Sources & References</p>
+  <div className="grid md:grid-cols-3 gap-3 text-left max-w-4xl mx-auto mb-6">
+    <a href="https://www.eia.gov/electricity/data.php" target="_blank" rel="noopener noreferrer" 
+       className="text-sm text-[#9B9B9B] hover:text-[#FCFA6E] transition-colors flex items-center gap-2">
+      <span className="w-1.5 h-1.5 rounded-full bg-[#FCFA6E]" />
+      U.S. Energy Information Administration (EIA)
+    </a>
+    <a href="https://www.epa.gov/egrid" target="_blank" rel="noopener noreferrer"
+       className="text-sm text-[#9B9B9B] hover:text-[#FCFA6E] transition-colors flex items-center gap-2">
+      <span className="w-1.5 h-1.5 rounded-full bg-[#FCFA6E]" />
+      EPA eGRID Database
+    </a>
+    <a href="https://www.energy.gov/energysaver/articles/3-easy-tips-reduce-your-standby-power-loads" target="_blank" rel="noopener noreferrer"
+   className="text-sm text-[#9B9B9B] hover:text-[#FCFA6E] transition-colors flex items-center gap-2">
+  <span className="w-1.5 h-1.5 rounded-full bg-[#FCFA6E]" />
+  DOE - Standby Power Reduction Guide
+</a>
+<a href="https://www.energy.gov/energysaver/estimating-appliance-and-home-electronic-energy-use" target="_blank" rel="noopener noreferrer"
+   className="text-sm text-[#9B9B9B] hover:text-[#FCFA6E] transition-colors flex items-center gap-2">
+  <span className="w-1.5 h-1.5 rounded-full bg-[#FCFA6E]" />
+  DOE - Appliance Energy Use Estimates
+</a>
+    <a href="https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator" target="_blank" rel="noopener noreferrer"
+       className="text-sm text-[#9B9B9B] hover:text-[#FCFA6E] transition-colors flex items-center gap-2">
+      <span className="w-1.5 h-1.5 rounded-full bg-[#FCFA6E]" />
+      EPA GHG Equivalencies Calculator
+    </a>
+    <a href="https://www.census.gov/popclock/" target="_blank" rel="noopener noreferrer"
+       className="text-sm text-[#9B9B9B] hover:text-[#FCFA6E] transition-colors flex items-center gap-2">
+      <span className="w-1.5 h-1.5 rounded-full bg-[#FCFA6E]" />
+      U.S. Census Bureau Population Data
+    </a>
+    <a href="https://www.energy.gov/eere/buildings/appliance-and-equipment-standards-program" target="_blank" rel="noopener noreferrer"
+       className="text-sm text-[#9B9B9B] hover:text-[#FCFA6E] transition-colors flex items-center gap-2">
+      <span className="w-1.5 h-1.5 rounded-full bg-[#FCFA6E]" />
+      U.S. Department of Energy (DOE)
+    </a>
+    <a href="https://www.nrel.gov/analysis/data-tools.html" target="_blank" rel="noopener noreferrer"
+       className="text-sm text-[#9B9B9B] hover:text-[#FCFA6E] transition-colors flex items-center gap-2">
+      <span className="w-1.5 h-1.5 rounded-full bg-[#FCFA6E]" />
+      National Renewable Energy Laboratory (NREL)
+    </a>
+    <a href="https://www.iea.org/data-and-statistics" target="_blank" rel="noopener noreferrer"
+       className="text-sm text-[#9B9B9B] hover:text-[#FCFA6E] transition-colors flex items-center gap-2">
+      <span className="w-1.5 h-1.5 rounded-full bg-[#FCFA6E]" />
+      International Energy Agency (IEA)
+    </a>
+    <a href="https://www.aceee.org/research-report/u2301" target="_blank" rel="noopener noreferrer"
+       className="text-sm text-[#9B9B9B] hover:text-[#FCFA6E] transition-colors flex items-center gap-2">
+      <span className="w-1.5 h-1.5 rounded-full bg-[#FCFA6E]" />
+      American Council for Energy-Efficient Economy
+    </a>
+    <a href="https://www.noaa.gov/climate" target="_blank" rel="noopener noreferrer"
+       className="text-sm text-[#9B9B9B] hover:text-[#FCFA6E] transition-colors flex items-center gap-2">
+      <span className="w-1.5 h-1.5 rounded-full bg-[#FCFA6E]" />
+      NOAA Climate Data
+    </a>
+    <a href="https://www.eia.gov/electricity/monthly/" target="_blank" rel="noopener noreferrer"
+   className="text-sm text-[#9B9B9B] hover:text-[#FCFA6E] transition-colors flex items-center gap-2">
+  <span className="w-1.5 h-1.5 rounded-full bg-[#FCFA6E]" />
+  EIA Monthly Electric Power Report
+</a>
+  </div>
+  <p className="text-xs text-[#5B5B5B]">Data Period: 2019–2024 · Last Updated: December 2025</p>
+  <p className="text-xs text-[#5B5B5B] mt-2">NYU IMA Data Visualization · Fall 2025</p>
+</div>
         </div>
       </section>
 
